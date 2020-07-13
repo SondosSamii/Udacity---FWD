@@ -31,10 +31,10 @@ function listening() {
 // Dummy API Endpoint
 const fakeData = {
   animal: "Lion",
-  fact: "The lion",
+  fact: "Lions are fun",
 };
 
-app.get("fakeAnimalData", getFakeData);
+app.get("/fakeAnimalData", getFakeData);
 
 function getFakeData(req, res) {
   res.send(fakeData);

@@ -14,7 +14,7 @@ function performAction(e) {
       console.log(data);
       postData("/addAnimal", {
         animal: data.animal,
-        facts: data.facts,
+        fact: data.fact,
         fav: fav,
       });
       // You can do this because of Async!
@@ -52,6 +52,7 @@ const getAnimal = async (url) => {
     return data;
   } catch (error) {
     console.log("error", error);
+    // appropriately handle the error
   }
 };
 
